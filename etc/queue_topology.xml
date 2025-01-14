@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
+    <exchange name="lokeshyourfriend-magento-db" type="topic" connection="db">
+        <binding id="lokeshyourfriendBasicMsgQueueTopicBasedRouting1" 
+                 topic="lokeshyourfriend.basic.msg.queue.topic" 
+                 destinationType="queue" 
+                 destination="lokeshyourfriend.basic.msg.queue.topic.queue"/>
+        <binding id="lokeshyourfriendBasicMsgQueueTopicBasedRouting2" 
+                 topic="lokeshyourfriend.basic.msg.queue.topic.two" 
+                 destinationType="queue" 
+                 destination="lokeshyourfriend.basic.msg.queue.topic.queue.two"/>
+        <!--<binding id="lokeshyourfriendBasicMsgQueueTopicBasedRouting3" 
+                 topic="lokeshyourfriend.basic.msg.queue.topic.three" 
+                 destinationType="queue" 
+                 destination="lokeshyourfriend.basic.msg.queue.topic.queue.three"/>-->
+    </exchange>
+</config>

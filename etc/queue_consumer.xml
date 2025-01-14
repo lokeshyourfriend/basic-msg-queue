@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/consumer.xsd">
+    <consumer name="lokeshyourfriend.basic.msg.queue.topic.queue" 
+              queue="lokeshyourfriend.basic.msg.queue.topic.queue" 
+              handler="Lokeshyourfriend\BasicMsgQueue\Model\HandlerOne::handlerMethod"
+              connection="db" 
+              maxMessages="5000"/>
+    <consumer name="lokeshyourfriend.basic.msg.queue.topic.queue.consumer" 
+              queue="lokeshyourfriend.basic.msg.queue.topic.queue.two" 
+              handler="Lokeshyourfriend\BasicMsgQueue\Model\HandlerOne::handlerMethodTwo"
+              connection="db" 
+              maxMessages="5000"/>
+    <!--<consumer name="lokeshyourfriend.basic.msg.queue.topic.queue.three.consumer" 
+              queue="lokeshyourfriend.basic.msg.queue.topic.queue.three" 
+              handler="Lokeshyourfriend\BasicMsgQueue\Model\HandlerOne::handlerMethodThree"
+              connection="db" 
+              maxMessages="5000"/>-->
+</config>

@@ -1,1 +1,1 @@
-# basic-msg-queue
+# A simple message queue system 

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Communication/etc/communication.xsd">
+    <topic name="lokeshyourfriend.basic.msg.queue.topic" request="string">
+        <handler name="lokeshyourfriend.basic.msg.queue.handler" 
+                 type="Lokeshyourfriend\BasicMsgQueue\Model\SyncHandler" 
+                 method="handlerMethod"/>
+    </topic>
+    <topic name="lokeshyourfriend.basic.msg.queue.topic.two" request="string[]">
+        <handler name="lokeshyourfriend.basic.msg.queue.handler.two" 
+                 type="Lokeshyourfriend\BasicMsgQueue\Model\SyncHandler" 
+                 method="handlerMethodTwo"/>
+    </topic>
+    <!-- Below topic type request is not worked when i tried to implement it -->
+    <!--<topic name="lokeshyourfriend.basic.msg.queue.topic.three" 
+           request="Lokeshyourfriend\BasicMsgQueue\Api\TopicRequestInterface">
+        <handler name="lokeshyourfriend.basic.msg.queue.handler.three" 
+                 type="Lokeshyourfriend\BasicMsgQueue\Model\SyncHandler" 
+                 method="handlerMethodThree"/>
+    </topic>-->
+</config>

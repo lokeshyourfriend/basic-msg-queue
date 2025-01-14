@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
+    <publisher topic="lokeshyourfriend.basic.msg.queue.topic">
+        <connection name="db" exchange="lokeshyourfriend-magento-db" />
+    </publisher>
+    <publisher topic="lokeshyourfriend.basic.msg.queue.topic.two">
+        <connection name="db" exchange="lokeshyourfriend-magento-db" />
+    </publisher>
+    <!--<publisher topic="lokeshyourfriend.basic.msg.queue.topic.three">
+        <connection name="db" exchange="lokeshyourfriend-magento-db" />
+    </publisher>-->
+</config>
