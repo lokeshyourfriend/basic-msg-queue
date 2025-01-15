@@ -1,6 +1,6 @@
 {
     "name": "lokeshyourfriend/basic-msg-queue",
-    "description": "A module created for basic message queue service. Topic is type of string.",
+    "description": "A module created for basic message queue service.",
     "type": "magento2-module",
     "version": "2.0.0",
     "license": [
